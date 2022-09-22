@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Food Website Design Tutorial</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="logo"><img src="images/outros/logo.png" alt="" class="xxx"> </a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">Início</a>
+
+            <a href="#about">Sobre Nós</a>
+            <a href="#menu">Cardápio</a>
+            <a href="#review">clientes</a>
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-home"></a>
+            <button onclick="document.getElementById('janela').style.display='block'" style="width:auto;">
+                <b class="">Entrar</b>
+            </button>
+ 
+        </div>
+        <div id="janela" class="modal">
+            <form class="modal-content animate" action="" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('janela').style.display='none'" class="close"
+                        title="Close Modal">&times;
+                    </span>
+                    <img src="images/outros/logo.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Administrador</b></label><br>
+                    <input type="text" id="name" placeholder="Administrador" name="uname" required><br>
+                    <label for="psw"><b>Código</b></label><br>
+                    <input type="password" id="senha" placeholder="123" name="psw" required><br>
+                    <input class="buttom-form" id="cadastro" type="submit" value="Entrar">
+
+                </div>
+            </form>
+        </div>
+
+    </header>
+
+
+
+    <!-- header section ends-->
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="pesquise aqui" name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="swiper-container home-slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+
+                        <h3>Marmita Veggie</h3>
+                        <p>O veganismo não é uma simples dieta, é um estilo de vida! A culinária vegana é saborosa,
+                            variada e visualmente linda. Aproveite nosso cardápio variado!</p>
+
+                    </div>
+                    <div class="image">
+                        <img src="images/slides/saldavee-alho.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+
+                        <h3>Marmita Fitness</h3>
+                        <p>Imagina você conseguir comer uma comida gostosa, saudável, sem glúten, sem lactose, sem ter
+                            trabalho de fazer, em qualquer lugar e a um preço maravilhoso?</p>
+
+                    </div>
+                    <div class="image">
+                        <img src="images/slides/mulher.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+
+                        <h3>Sucos Naturais</h3>
+                        <p>Já imaginou se deliciar com os mais diversos sabores de sucos naturais, como se tivesse
+                            colhido cada fruta direto do pé?! Com a Quentinhas do Grau, você garante isso e muito mais!
+                        </p>
+
+                    </div>
+                    <div class="image">
+                        <img src="images/slides/suco.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- dishes section starts  -->
+
+    <section class="dishes" id="dishes">
+
+        <h3 class="sub-heading"> Mais Vendidos </h3>
+        <h1 class="heading"> Destaques da semana </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/frango//curry.jpeg" alt="">
+                <h3>Curry Indiano</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>R$24,00</span>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/frango/risoto.jpeg" alt="">
+                <h3>Risoto Italiano de Cogumelo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>R$24,00</span>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/frango/frango-xadrez.jpeg" alt="">
+                <h3>Frango Xadrez com Arroz Chau Chau</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>24,00</span>
+
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/frango/quiabo.jpeg" alt="">
+                <h3>Frango com Quiabo e Angu</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>R$24,00</span>
+
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/Carnes/Escondidinho-de-Batata.jpeg" alt="">
+                <h3>Escondidinho de batata com carne moída</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>R$22,00</span>
+
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/Carnes/File-mignon-madeira.jpeg" alt="">
+                <h3>Filé Mignon ao Molho Madeira</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>R$29,90</span>
+
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/Peixe-Sopa/sopa-seca.jpeg" alt="">
+                <h3>Sopa Seca Barriga - Carne</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>R$14,00</span>
+
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/Peixe-Sopa/tilapia-grelhada.jpeg" alt="">
+                <h3>Tilápia Grelhada</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>R$24,00</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- dishes section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h3 class="sub-heading"> sobre nós </h3>
+        <h1 class="heading"> porque nos escolher? </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about-img.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Melhores quentinhas proximas a você</h3>
+                <p>Além do serviço de ótima qualidade, oferecemos as melhores quentinhas que pode se encontrar e a um
+                    preço acessível para todos. Estamos em cada esquina oferecendo o sempre o melhor!</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>entregas gratuitas</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>fácil pagamento</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>serviço 24 horas</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading"> Nosso menu </h3>
+        <h1 class="heading"> Veggie </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango//curry.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Curry Indiano </h3>
+                    <p>O Curry é um prato típico da Índia que os brasileiros amam!
+                        Hoje é um dos pratos mais vendidos do Marmita Fitness, e por isso decidimos criar a versão
+                        vegetariana pra ninguém perder essa delicia!
+                        Ah, e ele acompanha arroz coco!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/molho de mostarda.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Moqueca Brasileira de Banana da Terra</h3>
+                    <p>Nossa deliciosa Moqueca Baiana Vegetariana de Banana da Terra. 🍌 Você não tem noção dessas
+                        bananas nesse molho, e para acompanhar: um creme de coco dos deuses! Só de escrever aqui me deu
+                        água na boca! </p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/risoto.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Risoto Italiano de Cogumelo</h3>
+                    <p>O clássico Risoto de Cogumelos com espinafre na versão FIT. Porque, né?! Pra que carne? 🌱
+                        Experimente agora essa delicia inspirada nos divinos risotos feitos na Itália!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/strogonoff].jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Strogonoff Russo </h3>
+                    <p>SIM! 😱 O Strogonoff é um prato típico da Rússia.
+                        O Marmita mexeu os pauzinhos e o transformou num delicioso prato Vegetariano!
+                        Esse você não pode perder!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading"> Nosso Menu </h3>
+        <h1 class="heading"> Frango </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/batata-doce.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Escondidinho de Batata Doce</h3>
+                    <p>Escondidinho feito com purê de batata doce, e com o tempero caseiro do Marmita Fitness,
+                        acompanhado de um delicioso molho de Frango.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/panceca.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Panqueca Fit</h3>
+                    <p>Massa de panqueca deliciosa, recheado com frango desfiado e um cremoso molho sugo: a Panqueca Fit
+                        é maravilhosa!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/molho de mostarda.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Frango ao Molho de Mostarda</h3>
+                    <p>Delicioso Filé de Frango ao molho de Mostarda, acompanhado do nosso Arroz e uma moranga com
+                        tomatinhos para atrapalhar qualquer um de comer besteira.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/frango-xadrez.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Frango Xadrez com Arroz Chau Chau</h3>
+                    <p>Esses dois juntos, não tem pra ninguém! Experimente agora essa junção de sabores na versão Fit
+                        que vai fazer você se deliciar sem culpa alguma.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/parmegiana.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Frango á Parmegiana</h3>
+                    <p>Aquele filé de frango grelhado de respeito, acompanhado de um cremoso purê de batata inglesa ao
+                        molho sugo caseiro super fit. É irresistível</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango//strogonoff].jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Strogonoff de Frango Light</h3>
+                    <p>Esse é um clássico! Versão Light do tão aclamado Strogonoff de Frango, com um delicioso arroz bem
+                        soltinho. Além de gostoso, é Fit!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/molho-branco.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Penne Integral ao Molho Branco e Frango</h3>
+                    <p>Sabe aquela massa ao molho branco que só tem em restaurante? Agora você pode ter na praticidade
+                        da sua casa</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/contra coxa acafrao.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Contra Coxa com Açafrão</h3>
+                    <p>Um prato intenso de sabor e cheio de nutrientes. Assim, fica fácil demais não sair da dieta!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/frango-xadrez.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Frango Xadrez </h3>
+                    <p>Frango Xadrez é um prato oriental muito famoso. Na versão Fit, usamos vários legumes e um frango
+                        feito em zero gordura e muito suculento!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/contra-coxa-risoto.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Contra Coxa Grelhada e Risoto de Abobrinha</h3>
+                    <p>Suculentas sobre coxas desossadas, com aquele tempero caseiro que só o Marmita Fitness tem,
+                        acompanhado de um maravilho Risoto de Abobrinha.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/quiabo.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Frango com Quiabo e Angu</h3>
+                    <p>O clássico mineiro agora na versão fitness para você se deliciar sem culpa!</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/frango/curry.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Frango ao Curry </h3>
+                    <p>A mistura do salgado com o doce que você respeita: Frango em cubos ao molho curry com arroz de
+                        coco: Uma combinação deliciosa de dá água na boca!.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="menu" id="menu">
+        <h3 class="sub-heading"> Nosso Menu </h3>
+        <h1 class="heading"> Carnes </h1>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/Caldo-De-Mandioca.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Caldo de Mandioca Fit</h3>
+                    <p>O Frio Chegou e com ele nosso Maravilhoso Caldo de Mandioca Fit. Saboroso e Saudável =)</p>
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/Escondidinho-de-Batata.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Escondidinho de batata com carne moída</h3>
+                    <p>O clássico e querido escondidinho de batata inglesa com molho de carne moída. É serio Marmita
+                        Fitness?</p>
+
+                    <span class="price">R$22,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/Escondidinho-de-abobora.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Escondidimho de Abóbora</h3>
+                    <p>Purê cremosíssimo de Abóbora com delicioso molho de Patinho em Cubos. E pasmem: LOW CARB! 😱</p>
+
+                    <span class="price">R$22,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/Yakisoba-fit.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Yakisoba Fit</h3>
+                    <p>De origem japonesa, o Yakisoba Fit nada mais é que um macarrão integral servido com diferentes
+                        legumes, temperos e incrementado com molho Shoyu. Uma delícia! 😍 </p>
+
+                    <span class="price">R$22,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/Espaguete-integral.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Espaguete Integral á Bolonhesa</h3>
+                    <p>Deliciosa massa integral com molho á bolonhesa que só o Marmita Fitness sabe fazer.</p>
+
+                    <span class="price">R$22,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/Strogonoff-mignon.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Strogonoff de Mignon Light</h3>
+                    <p>Ninguém resiste a um strogonoff bem feitinho, com a carne macia, o molho cremoso e com cogumelos
+                        fatiado. E o melhor: É FIT!</p>
+
+                    <span class="price">R$29,90</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/File-mignon-madeira.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Filé Mignon ao Molho Madeira</h3>
+                    <p>O Chiquérrimo Filé Mignon ao Molho Madeira com Couve-Flor ao molho branco. Fitness e Saboroso! 😍
+                    </p>
+
+                    <span class="price">R$29,90</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Carnes/Patinho-Cozido.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Patinho Cozido</h3>
+                    <p>Maravilhoso Patinho Cozido picadinho, com aquele Feijão caseirinho e um delicioso Arroz à
+                        Grega bem temperadinho.</p>
+
+
+                    <span class="price">R$22,00</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading"> Nosso Menu </h3>
+        <h1 class="heading"> Peixes & Sopas </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+
+
+                    <img src="images/Peixe-Sopa/minestrone.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Minestrone</h3>
+                    <p>O Frio chegou e com ele uma Sopa de Legumes muito Deliciosa e muito Fitness!!</p>
+                    s
+
+                    <span class="price">R$14,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+
+                    <img src="images/Peixe-Sopa/sopa-acelera.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Sopa Acelera Metabolismo - Frango</h3>
+                    <p>Que tal dá uma acelerada no metabolismo para ajudar na dieta? Com essa sopa você consegue!
+                        Experimente! 😉</p>
+
+
+                    <span class="price">R$14,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/sopa-seca.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Sopa Seca Barriga - Carne</h3>
+                    <p>Feita com legumes selecionados e todos LOW CARB, assim, não tem erro, seca barriga
+                        mesmo!!! 💪</p>
+
+                    <span class="price">R$14,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/sopa-anti.jpeg" alt="">
+                    >>>>>>> Stashed changes
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Sopa Anti Inflamatória</h3>
+                    <p>O açafrão é uma raiz de cor laranja, que constitui um dos antioxidantes e
+                        anti-inflamatórios mais poderosos do planeta e que parece apresentar mecanismos
+                        ativos supressores das células cancerígenas, na diminuição da inflamação e dor
+                        associada a osteoartrite. Experimente!!!</p>
+                    >>>>>>> Stashed changes
+
+                    <span class="price">R$14,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/tilapia-pure.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tilápia com Purê de Batatas</h3>
+                    <p>Filé de Tilápia Grelhada no Azeite e uma crosta bem crocante de gergelim. Acompanha um
+                        delicioso purê de batata inglesa.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/tilapia-grelhada.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tilápia Grelhada</h3>
+                    <p>Filé de Tilápia grelhada no azeite com um toque de chimichurri, acompanhado de um
+                        delicioso arroz sete grãos á grega.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/moqueca-tilapia.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Moqueca de Tilápia com Farofa de Banana da Terra</h3>
+                    <p>Deliciosa Moqueca de Tilápia acompanhada de um arroz integral bem soltinho e uma Farofa de
+                        Banana da Terra!!! 🍌</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/risoto-alho.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Risoto de Alho Poró com Salmão</h3>
+                    <p>É gente, assim fica fácil de ser FIT!
+                        Apresento á vocês nosso queridinho 😍 juntamos o maravilhoso Risoto com Alho Poró e as
+                        nossas deliciosas Lascas de Salmão!
+                        Meu Deus, é bom demais pra ser verdade!</p>
+
+                    <span class="price">R$32,00</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading"> Nosso Menu </h3>
+        <h1 class="heading">Sucos</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+
+                    <img src="images/sucos/maracuja.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Kit Suco Maracujá </h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+                    s
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+
+                    <img src="images/sucos/graviola.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Kit Suco Graviola</h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/sucos/morango.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Kit Suco Morango</h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/sucos/abacaxi.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Kit Suco Abacaxi com Hortelã</h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+
+        <h1 class="heading"> Clientes </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/clientes/fernando.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Fernando</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Primeiro, quero parabenizar pelo atendimento, me tirou dúvidas e foi muito gentil.
+                        A comida é muito boa e estou conseguindo comer no horário. Nem preciso sair do escritório.
+                        Obrigado!</p>
+                </div>
+
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/clientes/gabriel.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Gabriel</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Já é a segunda vez que compro várias marmitas low carb neste estabelecimento e recomendo a todos.
+                        As marmitas são, sim, bem servidas, como nas fotos e saborosas. Para quem esteja numa dieta
+                        controlada em calorias é a melhor opção. Para quem quiser comer para se fartar, Marmita Fitness
+                        não rola. Aprovado!</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/clientes/luiz.png" alt="">
+                        <div class="user-info">
+                            <h3>Luiz</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Bom atendimento e entrega agendada de acordo com a preferência do cliente. Ingredientes saudáveis
+                        e selecionados segundo a proposta da empresa, refeições com baixo consumo de carboidratos e
+                        maior quantidade de proteína. A quantidade das porções pode ser revisada.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/clientes/larissa.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Larissa</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Pedi pela segunda vez e estou amando, as comidas são muito bem feitas, saborosas, brinco que
+                        parece de restaurante, porque mesmo congeladas, ficam ótimas! As opções são ótimas! Vale a pena
+                        demais pedir!</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/clientes/mariele.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Mariele</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Atendimento excelente e comida quentinha.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Localizações</h3>
+                <a href="#">Minas Gerais</a>
+                <a href="#">São Paulo</a>
+                <a href="#">Rio de Janeira</a>
+                <a href="#">Bahia</a>
+                <a href="#">Maranhão</a>
+            </div>
+
+            <div class="box">
+                <h3>Links Navegaveis</h3>
+                <a href="#">home</a>
+                <a href="#">dishes</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">reivew</a>
+                <a href="#">order</a>
+            </div>
+
+            <div class="box">
+                <h3>Informações de Contato</h3>
+                <a href="#">(31) 99999-9999</a>
+                <a href="#">(31) 7070-7040</a>
+                <a href="#">Quentinhasdograu@gmail.com</a>
+                <a href="#">Quentinhasdograusuporte@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Siga-nos</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> copyright @ 2022 by <span>garotos de programa 4.0</span> </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader part  -->
+    <div class="loader-container">
+        <img src="images/outros/loader.gif" alt="">
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
